@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VirtualShopping.BLL.Interface\VirtualShopping.BLL.Interface.csproj" />
+    <ProjectReference Include="..\VirtualShopping.DAL.Interface\VirtualShopping.DAL.Interface.csproj" />
+    <ProjectReference Include="..\VirtualShopping.Domain\VirtualShopping.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

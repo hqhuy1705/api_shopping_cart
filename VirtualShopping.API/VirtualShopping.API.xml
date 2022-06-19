@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtualShopping.API</name>
+    </assembly>
+    <members>
+        <member name="M:VirtualShopping.Controllers.CartController.GetCartById(System.String,System.Boolean)">
+            <summary>
+            Gets Cart By Id
+            </summary>
+            <param name="cartId"></param>
+            <param name="getShop"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.CreateCart(VirtualShopping.Domain.Requests.CreateCartReq)">
+            <summary>
+            Creates Cart
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.AddItemToCart(VirtualShopping.Domain.Requests.CartItem.AddItemToCartReqModel)">
+            <summary>
+            Add an item into cart. If item exist in cart. Amount will increase 1. If not amount default is 1
+            </summary>
+            <param name="request"></param>
+            <returns>Result of add an item to the cart</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.RemoveItemFromCart(VirtualShopping.Domain.Requests.Cart.RemoveItemFromCartReqModel)">
+            <summary>
+            Remove an item from cart
+            </summary>
+            <param name="request"></param>
+            <returns>Result of remove an item from the cart</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.SubmitItemsInCart(VirtualShopping.Domain.Requests.CartItem.SubmitItemsInCartReqModel)">
+            <summary>
+            Submit items to cart. Send items of the customer for adding to the cart
+            </summary>
+            <param name="request"></param>
+            <returns>Result of submit items to the cart</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.UnSubmitItemsIncart(VirtualShopping.Domain.Requests.Cart.UnsubmitItemsReq)">
+            <summary>
+            Unsubmit items in cart of the customer
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.GetExistCart(VirtualShopping.Domain.Responses.Cart.GetExistCartReqModel)">
+            <summary>
+            Get exist cart that customer has created before with the shop
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CartController.RemoveCustomerFromCart(VirtualShopping.Domain.Requests.Cart.RemoveCustomerReqModel)">
+            <summary>
+            Host removed co-making customer from cart if they want
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CustomerController.Register(VirtualShopping.Domain.Requests.Customer.CustomerRegisterReqModel)">
+            <summary>
+            Reigster a new customer
+            </summary>
+            <param name="request"></param>
+            <returns>An object of new customer</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CustomerController.Update(VirtualShopping.Domain.Requests.Customer.CustomerUpdateReqModel)">
+            <summary>
+            Update customer information
+            </summary>
+            <param name="request"></param>
+            <returns>Response of update customer information process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CustomerController.Login(VirtualShopping.Domain.Requests.Customer.CustomerLoginReqModel)">
+            <summary>
+            Customer login by Phone Number
+            </summary>
+            <param name="request"></param>
+            <returns>Response for deleted customer process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.CustomerController.Deleted(System.String)">
+            <summary>
+            Delete a exists customer
+            </summary>
+            <param name="customerId"></param>
+            <returns>Response for deleted customer process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ItemController.Create(VirtualShopping.Domain.Requests.ItemDTO.ItemCreateDTO)">
+            <summary>
+            Create a new Item
+            </summary>
+            <param name="dto"></param>
+            <returns>An object of new Item</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ItemController.Update(VirtualShopping.Domain.Requests.ItemDTO.ItemUpdateDTO)">
+            <summary>
+            Update Item
+            </summary>
+            <param name="dto"></param>
+            <returns>An object of new Item</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ItemController.Delete(VirtualShopping.Domain.Requests.ItemDTO.ItemDeleteDTO)">
+            <summary>
+            Delete Item
+            </summary>
+            <param name="dto"></param>
+            <returns>An object of Deleted Item</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ItemController.GetItemInfoById(System.String)">
+            <summary>
+            Get Item by ID
+            </summary>
+            <param name="id"></param>
+            <returns>An object of Item</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ItemController.ActiveItem(VirtualShopping.Domain.Requests.ItemDTO.ActiveItemReqModel)">
+            <summary>
+            Active Item
+            </summary>
+            <param name="request"></param>
+            <returns>Response when shop active an item</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.GetOrder(System.String)">
+            <summary>
+            Get Order by Id
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.PlacedNewOrder(VirtualShopping.Domain.Requests.PlacedNewOrderReq)">
+            <summary>
+            Placed new order
+            </summary>
+            <param name="request"></param>
+            <returns>Response of placed new order progress</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.CancelOrder(VirtualShopping.Domain.Requests.CancelOrderReq)">
+            <summary>
+            Cancel an order
+            </summary>
+            <param name="request"></param>
+            <returns>Response </returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.ChangeOrderStatus(VirtualShopping.Domain.Requests.Order.ChangeOrderStatusReqModel)">
+            <summary>
+            Update status of order for customer or shop (not include cancel order)
+            </summary>
+            <param name="request"></param>
+            <returns>Response progress of update status for order</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.GetAllOrdersOfCustomer(System.String)">
+            <summary>
+            Gets All Orders of Customer
+            </summary>
+            <param name="customerId"></param>
+            <returns>List of orders belong to specific customer</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.OrderController.GetAllOrdersOfShop(System.String)">
+            <summary>
+            Gets All Orders of Shop
+            </summary>
+            <param name="shopId"></param>
+            <returns>List of orders belong to specific shop</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.Register(VirtualShopping.Domain.Requests.ShopDTO.ShopRegisterDTO)">
+            <summary>
+            Reigster a new Shop
+            </summary>
+            <param name="dto"></param>
+            <returns>An object of PhoneNumber</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.Login(VirtualShopping.Domain.Requests.ShopDTO.ShopLoginDTO)">
+            <summary>
+            Shop login by Phone Number
+            </summary>
+            <param name="dto"></param>
+            <returns>Response for login process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.Update(VirtualShopping.Domain.Requests.ShopDTO.ShopUpdateDTO)">
+            <summary>
+            Update Shop information
+            </summary>
+            <param name="dto"></param>
+            <returns>Response of update Shop information process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.Delete(VirtualShopping.Domain.Requests.ShopDTO.ShopDeleteDTO)">
+            <summary>
+            Delete a exists Shop
+            </summary>
+            <param name="dto"></param>
+            <returns>Response for deleted Shop process</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.GetShopInfoById(System.String)">
+            <summary>
+            Get Shop Info by Id
+            </summary>
+            <param name="Shop IdId"></param>
+            <returns>An object of new customer</returns>
+        </member>
+        <member name="M:VirtualShopping.Controllers.ShopController.GetShops">
+            <summary>
+            Get list of shops
+            </summary>
+            <returns>List of shops</returns>
+        </member>
+    </members>
+</doc>

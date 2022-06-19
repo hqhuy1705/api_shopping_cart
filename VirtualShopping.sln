@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.BLL.Interface", "VirtualShopping.BLL.Interface\VirtualShopping.BLL.Interface.csproj", "{2492B4D0-FE72-4710-B108-079E662BE111}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.BLL.Implement", "VirtualShopping.BLL.Implement\VirtualShopping.BLL.Implement.csproj", "{BCB322DF-3496-43DA-95BF-312CAC060B45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.DAL.Interface", "VirtualShopping.DAL.Interface\VirtualShopping.DAL.Interface.csproj", "{F65C0227-2E2E-4280-9257-B95451AE161E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.DAL.Implement", "VirtualShopping.DAL.Implement\VirtualShopping.DAL.Implement.csproj", "{95920662-AF6E-496A-9C96-2C1FFD370EF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.Domain", "VirtualShopping.Domain\VirtualShopping.Domain.csproj", "{8D53DB8E-2984-400E-BC9C-08CC588A0DBC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualShopping.API", "VirtualShopping.API\VirtualShopping.API.csproj", "{AC57FEE0-263B-4B6E-97FC-97D09DDC6B0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2492B4D0-FE72-4710-B108-079E662BE111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2492B4D0-FE72-4710-B108-079E662BE111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2492B4D0-FE72-4710-B108-079E662BE111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2492B4D0-FE72-4710-B108-079E662BE111}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB322DF-3496-43DA-95BF-312CAC060B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB322DF-3496-43DA-95BF-312CAC060B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB322DF-3496-43DA-95BF-312CAC060B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB322DF-3496-43DA-95BF-312CAC060B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65C0227-2E2E-4280-9257-B95451AE161E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65C0227-2E2E-4280-9257-B95451AE161E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65C0227-2E2E-4280-9257-B95451AE161E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65C0227-2E2E-4280-9257-B95451AE161E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95920662-AF6E-496A-9C96-2C1FFD370EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95920662-AF6E-496A-9C96-2C1FFD370EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95920662-AF6E-496A-9C96-2C1FFD370EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95920662-AF6E-496A-9C96-2C1FFD370EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D53DB8E-2984-400E-BC9C-08CC588A0DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D53DB8E-2984-400E-BC9C-08CC588A0DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D53DB8E-2984-400E-BC9C-08CC588A0DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D53DB8E-2984-400E-BC9C-08CC588A0DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC57FEE0-263B-4B6E-97FC-97D09DDC6B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC57FEE0-263B-4B6E-97FC-97D09DDC6B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC57FEE0-263B-4B6E-97FC-97D09DDC6B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC57FEE0-263B-4B6E-97FC-97D09DDC6B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D752305-F757-4362-A9B6-53F870EC91F6}
+	EndGlobalSection
+EndGlobal
